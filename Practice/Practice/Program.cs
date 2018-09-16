@@ -6,6 +6,7 @@ namespace Practice
     class Program
     {
         //TODO: Extract everything from static Main to a non static Menu class, which will create the menu from the constructor
+        //TODO: Then further extract stuff into their own files as this file will get very large very fast due to all the switch statements
         static void Main(string[] args)
         {
             HandleCategoryMenu();
@@ -57,7 +58,8 @@ namespace Practice
         private static void HandleDataStructureMenu()
         {
             Console.WriteLine("Please select a topic: ");
-            Console.WriteLine("1) Arrays");
+            Console.WriteLine("1) Arrays, ArrayLists, Lists");
+            Console.WriteLine("2) Queues, Stacks, Hashtables");
 
             var input = GetUserMenuSelection();
 
@@ -68,6 +70,11 @@ namespace Practice
                         HandleArrayMenu();
                         break;
                     }
+                case 2:
+                    {
+                        HandleQueueStackHashtableMenu();
+                        break;
+                    }
                 default:
                     {
                         HandleMenuDefaultCase();
@@ -75,6 +82,54 @@ namespace Practice
                     }
             }
         }
+
+        private static void HandleQueueStackHashtableMenu()
+        {
+            //TODO: Use reflection to get the list of function names
+            Console.WriteLine("Please select a topic: ");
+            Console.WriteLine("1) How To Enqueue and Dequeue in a Queue");
+            Console.WriteLine("2) How To Peek in a Queue");
+            Console.WriteLine("3) How To Push and Pop in a Stack");
+            Console.WriteLine("4) How To Hashtable");
+            Console.WriteLine("5) How To Dictionary");
+
+            var input = GetUserMenuSelection();
+
+            switch (input)
+            {
+                case 1:
+                    {
+                        QueueStackHashtablePractice.HowToEnqueueAndDequeue();
+                        break;
+                    }
+                case 2:
+                    {
+                        QueueStackHashtablePractice.HowToPeekInAQueue();
+                        break;
+                    }
+                case 3:
+                    {
+                        QueueStackHashtablePractice.HowToStack();
+                        break;
+                    }
+                case 4:
+                    {
+                        QueueStackHashtablePractice.HowToHashtable();
+                        break;
+                    }
+                case 5:
+                    {
+                        QueueStackHashtablePractice.HowToDictionary();
+                        break;
+                    }
+                default:
+                    {
+                        HandleMenuDefaultCase();
+                        break;
+                    }
+            }
+        }
+
 
         private static void HandleArrayMenu()
         {

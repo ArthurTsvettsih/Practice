@@ -43,14 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSets\ArraysPractice.cs" />
+    <Compile Include="DataSets\QueueStackHashtablePractice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DataSets\BigO.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataSets\ArrayFacts.txt" />
+    <None Include="DataSets\ArrayFacts.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSets\QueueStackHashtableFacts.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

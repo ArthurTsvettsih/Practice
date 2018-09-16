@@ -20,3 +20,4 @@
 - List's constructor can take an argument to indicate how large the list should be, otherwise it's initiated as 0. Same can be done using the List.Capacity property
 - Lists have a number of useful functions, some of them being IndexOf(), BinarySearch(), Find(), FindAll(), Sort(), ConvertAll()
 - Even though Lists have more overhead, the cost per operation is the same as with standard arrays
+- Whenever a List needs to resize itself it will double(!) it's internal array size. Proof: ```int num = this._items.Length == 0 ? 4 : this._items.Length * 2;``` in EnsureCapcity in decompiled List class

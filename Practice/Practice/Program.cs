@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Practice.DataSets;
 
 namespace Practice
@@ -82,7 +78,7 @@ namespace Practice
 
         private static void HandleArrayMenu()
         {
-            //TODO: Use reflection to get the list of arrays
+            //TODO: Use reflection to get the list of function names
             Console.WriteLine("Please select a topic: ");
             Console.WriteLine("1) How To Create An Array");
             Console.WriteLine("2) How To Resize An Array");

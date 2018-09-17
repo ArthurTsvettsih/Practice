@@ -42,20 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataSets\ArraysPractice.cs" />
-    <Compile Include="DataSets\QueueStackHashtablePractice.cs" />
+    <Compile Include="DataSets\Implementations\ArraysPractice.cs" />
+    <Compile Include="DataSets\Implementations\QueueStackHashtablePractice.cs" />
+    <Compile Include="DataSets\Implementations\Trees\Node.cs" />
+    <Compile Include="DataSets\Implementations\Trees\NodeList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="DataSets\BigO.md" />
+    <None Include="DataSets\Notes\BigO.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataSets\ArrayFacts.md" />
+    <None Include="DataSets\Notes\ArrayFacts.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataSets\QueueStackHashtableFacts.md" />
+    <None Include="DataSets\Notes\BinaryTreeFacts.md" />
+    <None Include="DataSets\Notes\QueueStackHashtableFacts.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

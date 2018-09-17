@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="DataSets\Implementations\ArraysPractice.cs" />
     <Compile Include="DataSets\Implementations\QueueStackHashtablePractice.cs" />
+    <Compile Include="DataSets\Implementations\Trees\BinaryTree.cs" />
+    <Compile Include="DataSets\Implementations\Trees\BinaryTreeNode.cs" />
+    <Compile Include="DataSets\Implementations\Trees\BinaryTreePractice.cs" />
     <Compile Include="DataSets\Implementations\Trees\Node.cs" />
     <Compile Include="DataSets\Implementations\Trees\NodeList.cs" />
     <Compile Include="Program.cs" />

@@ -44,17 +44,21 @@
   <ItemGroup>
     <Compile Include="DataSets\Implementations\ArraysPractice.cs" />
     <Compile Include="DataSets\Implementations\QueueStackHashtablePractice.cs" />
-    <Compile Include="DataSets\Implementations\Trees\BinaryTree.cs" />
-    <Compile Include="DataSets\Implementations\Trees\BinaryTreeNode.cs" />
-    <Compile Include="DataSets\Implementations\Trees\BinaryTreePractice.cs" />
-    <Compile Include="DataSets\Implementations\Trees\Node.cs" />
-    <Compile Include="DataSets\Implementations\Trees\NodeList.cs" />
+    <Compile Include="DataSets\Implementations\SkipList\SkipList.cs" />
+    <Compile Include="DataSets\Implementations\SkipList\SkipListNode.cs" />
+    <Compile Include="DataSets\Implementations\SkipList\SkipListNodeList.cs" />
+    <Compile Include="DataSets\Implementations\Tree\BinaryTree.cs" />
+    <Compile Include="DataSets\Implementations\Tree\BinaryTreeNode.cs" />
+    <Compile Include="DataSets\Implementations\Tree\BinaryTreePractice.cs" />
+    <Compile Include="DataSets\Implementations\Tree\Node.cs" />
+    <Compile Include="DataSets\Implementations\Tree\NodeList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="DataSets\Notes\BigO.md" />
+    <None Include="DataSets\Notes\SkipListFacts.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DataSets\Notes\ArrayFacts.md" />

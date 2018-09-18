@@ -30,4 +30,38 @@
     - Preorder traversal - visit the current node, then left child (all the way to the smallest child at the bottom of the tree), then right child (all the way to the largest child at the bottom of the tree)
     - Inorder traversal - vists left child, then current node, then right child
     - Postorder traversal - visits the left child, then the right child, then the current node
-- Remove is the most complicated method
+- Remove is the most complicated method, as we need to rebalance the tree
+- Trees height can be measured by
+    - The height of a node with no children is 0
+    - The height of a node with one child is the height of that child + 1
+    - The height of a node with two children is one plus the greater height of the two children
+- Ideal tree height to node ratio is height = Math.Floor(log numberOfNodes)
+
+## Self-Balancing Binary Search Tree
+- Retains the as close as possible to the ideal height ratio
+- Some different types of Self-Balancing Binary Trees:
+    - AVL Tree
+    - Red-Black Tree
+    - 2-3 Tree
+    - 2-3-4 Tree
+    - Splay Tree
+    - B-Tree
+
+## AVL Trees
+- Name comes form a Russian mathematician - G. M. *A*ndel'son-*V*el-skii and E. M. *L*andis
+- For each node in an AVL tree, the height of its left and right subtrees can differ by at most by 1. If a node has no children, then it's height is -1
+- In order to maintain the balance AVL trees use _rotations_, which slightly reshapes the tree's topology so that the AVL balance property is restored and the Binary Search Tree property is maintained
+- Insertion is done in 2 stages: 
+    1) Use BST's insertion
+    1) Rotate the unbalanced subtree if necessary
+
+## Red-Black Trees
+- The nodes of a Red-Black Tree also contain information about their color, which is either red or black
+- Instead of having _null_ references at the leaf nodes, Red-Black Tree's have a special node called _NIL_
+- Special properties of a Red-Black Tree:
+    - Every Node is colored either red or black
+    - Every NIL node is black
+    - If a node is red, then both of its children are black
+    - Every path from a node to a descendant leaf contains the same number of black nodes
+- The height of a true Red-Black tree is always less than ```2 * log2(n+1)```
+- Red-Black Trees are very complicated as when balancing them we have to look at the colors of the nodes, their parents and uncles (an uncle of a node n is the node that is n's parent's sibling node)

@@ -30,6 +30,5 @@ namespace Practice.DataSets.Implementations.Trees
             this.data = data;
             this.children = children;
         }
-
     }
 }

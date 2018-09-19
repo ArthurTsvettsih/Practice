@@ -10,7 +10,7 @@ namespace Practice.DataSets.Implementations.Trees
 {
     public class Node<T>
     {
-        protected NodeList<T> Children { get; set; }
+        protected NodeList<T> Neighbours { get; set; }
 
         public T Value
         {

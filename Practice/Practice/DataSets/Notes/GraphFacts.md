@@ -1,0 +1,22 @@
+﻿## Graphs
+- Similarly to trees, Graphs are a collection of nodes
+- Trees are a specialised Graph
+- Edge is a connection between 2 nodes
+- There is no concept of root/head or children in Graphs
+- Not all nodes need to be connected
+- Graphs can contain cycles
+- Graphs are used all over, e.g. Search engines use graphs to represent websites or maps can be represented as graphs, with cities being the nodes and the roads the egdes
+- Edges have 2 types:
+    - Directed or undirected (graphs)
+    - Weighted or unweighted (graphs)
+- The maximum amount of edges in a directed graph is _n * (n - 1)_, which is nearly _n^2_. Furthermore, in some cases a node can link back to itself, which would make the maximum number of nodes _n^2_
+- Unidirected graph has a maximum of _(n * (n - 1)) / 2_ edges, which is nearly half as many edges as directed graphs
+- If a graph has significantly less than _n^2_ edges, then it is called _Sparse_, e.g. a graph with n edges or even 2n edges
+- A graph close to the maximum number of edges, is called _Dense_
+- Graphs can be created by
+    - Adjacency list, which is very similar to the base Node we created for trees, with an extra property for Weight. This method is space efficient, but not time efficient
+    - Adjacency matrix, which is a 2D array. This method is time efficient but not space efficient
+- Spannin Trees show the cheapest path to connect all nodes without a cycle
+- Spanning Trees can be created by
+    - Picking the cheapest edges as long as it does not create a cycle
+    - Traverse the Graph using the cheapest edge out of all the edges that are currently connected

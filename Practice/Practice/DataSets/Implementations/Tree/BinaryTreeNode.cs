@@ -25,24 +25,24 @@ namespace Practice.DataSets.Implementations.Trees
         {
             get
             {
-                if (base.Children == null)
+                if (base.Neighbours == null)
                 {
                     return null;
                 }
                 else
                 {
-                    return (BinaryTreeNode<T>) base.Children[0];
+                    return (BinaryTreeNode<T>) base.Neighbours[0];
                 }
             }
 
             set
             {
-                if (base.Children == null)
+                if (base.Neighbours == null)
                 {
-                    base.Children = new NodeList<T>(2);
+                    base.Neighbours = new NodeList<T>(2);
                 }
 
-                base.Children[0] = value;
+                base.Neighbours[0] = value;
             }
         }
 
@@ -50,23 +50,23 @@ namespace Practice.DataSets.Implementations.Trees
         {
             get
             {
-                if (base.Children == null)
+                if (base.Neighbours == null)
                 {
                     return null;
                 }
                 else
                 {
-                    return (BinaryTreeNode<T>) base.Children[1];
+                    return (BinaryTreeNode<T>) base.Neighbours[1];
                 }
             }
             set
             {
-                if (base.Children == null)
+                if (base.Neighbours == null)
                 {
-                    base.Children = new NodeList<T>(2);
+                    base.Neighbours = new NodeList<T>(2);
                 }
 
-                base.Children[1] = value;
+                base.Neighbours[1] = value;
             }
         }
 

@@ -1,0 +1,29 @@
+﻿## Sets
+- A set is an unordered collection of unique items that can be enumerated and compared to other sets in a variety of ways
+- Elements of a set are known as "elements"
+- In Maths a set is denoted with a capital italic letter and followed by curly braces, e.g. _S_ = {1, 2, 3}
+- We can say that element x belongs to a set _S_ using the following syntax x Î _S_ 
+- Not element of can be represented as such x Ï _S_
+- Sets _cardinality_ is the number of unique elements in it
+- Emtpy sets are known as _empty set_ or Æ. They also have a _cardinality_ of 0
+- Order and duplicates in a set are redundant ie {1, 2, 3} == {1, 3, 1, 1, 1, 2, 2, 3, 2}
+- Sets are generally restricted to a _universe_, such as integers or non-integers. _Universe_ is denoted as _U_
+- Relational operators (<, > , <=, >=) are not defined for sets, as we can't compare {1, 2, 3} to {Sam, Bob, 4}
+- Instead of relational operators, sets use _subset_ and _proper subset_ denoted Í and Ì, respectively
+- A subset means that _S_ contains all elements of _T_, e.g. {1, 2, 3} is a subset of {1, 2, 3, 4}
+- A proper subset occurs, when boths sets are equal e.g. {1, 2, 3} is a proper subset of {1, 2, 3}
+- Sets have 4 basic functions:
+    - Union - Concatination, e.g. {1, 2, 3} union {3, 5, 6} = {1, 2, 3, 5, 6}
+    - Intersection - Returns only common elements, e.g. {1, 2, 3} intersetcion {1, 5, 6} = {1}
+    - Difference - Returns all the elements that are not in the other list, e.g. {1, 2, 3} - {2, 4, 6} = {1, 3''}
+    - Complement - Returns missing elements from the universe, e.g. if our universe is the integers 1 through 10 and S = {1, 4, 9, 10} then S compliment is {2, 3, 5, 6, 7, 8}
+- A _commutative_ operation is (x op y) = (y op x), e.g. 1 + 2 = 2 + 1, but 1 / 2 != 2 / 1
+- An _associative_ operator means that the order doesn't matter, e.g. (x + y) + z = x + (y + z), but x / (y / z) != (x / y) / z
+- Sets can be infinite. As a result of this, in Maths there are special sets:
+    - N = {0, 1, 2, ...}
+    - Z = {..., -2, -1, 0, 1, 2, ...}
+    - Q = {a/b: a Î Z, b Î Z, and b ¹ 0} (set of rational numbers, which are numbers that can be expressed as a fraction of two integers)
+    - R = set of real numbers
+- Sets are not part of C# language
+- _Disjoint_ sets are sets that don't share anything in common, e.g. {1, 2, 3} and {6, 4, 5}
+- We arbitarely choose a _representative_ to identify the set

@@ -10,6 +10,7 @@
 - There are no cycles 
 - Trees are useful for arranging data in a hierarchy
 - Not stored contagiuously in memory
+- A set of trees is known as a _forest_
 
 ## Binary Tree
 - Special kind of tree where each node has at most 1 child - left child and right child

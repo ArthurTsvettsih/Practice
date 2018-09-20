@@ -47,6 +47,7 @@
     <Compile Include="DataSets\Implementations\Graphs\GraphNode.cs" />
     <Compile Include="DataSets\Implementations\Graphs\GraphPractice.cs" />
     <Compile Include="DataSets\Implementations\QueueStackHashtablePractice.cs" />
+    <Compile Include="DataSets\Implementations\Sets\PascalSet.cs" />
     <Compile Include="DataSets\Implementations\SkipList\SkipList.cs" />
     <Compile Include="DataSets\Implementations\SkipList\SkipListNode.cs" />
     <Compile Include="DataSets\Implementations\SkipList\SkipListNodeList.cs" />
@@ -60,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="DataSets\Notes\SetFacts.md" />
     <None Include="DataSets\Notes\GraphFacts.md" />
     <None Include="DataSets\Notes\BigO.md" />
     <None Include="DataSets\Notes\SkipListFacts.md" />
